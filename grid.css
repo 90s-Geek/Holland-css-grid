@@ -1,0 +1,60 @@
+/* Container for the grid */
+.wrapper {
+  display: grid;
+  /* Define 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Common styles for all boxes */
+.box {
+  padding: 10px;
+  border: 1px solid #777;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Box 1: Top row, spans all 3 columns */
+.box1 {
+  grid-column: 1 / 4;
+  background-color: #a54242;
+  height: 200px;
+}
+
+/* Box 2: Middle-left, spans 2 rows down */
+.box2 {
+  grid-row: 2 / 4;
+  background-color: #f5e6ab;
+}
+
+/* Box 3: Middle-right, spans 2 columns wide */
+.box3 {
+  grid-column: 2 / 4;
+  background-color: #a3c59a;
+  height: 100px;
+}
+
+/* Box 4: Middle-center */
+.box4 {
+  background-color: #c5e3f6;
+  height: 100px;
+}
+
+/* Box 5: Middle-right (below Box 3) */
+.box5 {
+  background-color: #7161ef;
+}
+
+/* Box 6: Bottom row, spans all 3 columns */
+.box6 {
+  grid-column: 1 / 4;
+  background-color: #f377c8;
+  height: 80px;
+}
+
+/* Matching the background color from the screenshot */
+.bg-light-beige {
+  background-color: #fdf5e6;
+}
