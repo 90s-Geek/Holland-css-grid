@@ -1,0 +1,59 @@
+/* Container for the grid */
+.wrapper {
+  display: grid;
+  /* Define 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Common styles for all boxes */
+.box {
+  padding: 10px;
+  border: 1px solid #777777;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Box 1: Top row, spans all 3 columns */
+.box1 {
+  grid-column: 1 / 4;
+  background-color: #22223b;
+  height: 200px;
+}
+
+/* Box 2: Middle-left, spans 2 rows down */
+.box2 {
+  grid-row: 2 / 4;
+  background-color: #4a4e69;
+}
+
+/* Box 3: Middle-right, spans 2 columns wide */
+.box3 {
+  grid-column: 2 / 4;
+  background-color: #9a8c98;
+  height: 100px;
+}
+
+/* Box 4: Middle-center */
+.box4 {
+  background-color: #c9ada7;
+  height: 100px;
+}
+
+/* Box 5: Middle-right (below Box 3) */
+.box5 {
+  background-color: #62b6cb;
+}
+
+/* Box 6: Bottom row, spans all 3 columns */
+.box6 {
+  grid-column: 1 / 4;
+  background-color: #bee9e8;
+  height: 80px;
+}
+
+.bg-light-beige {
+  background-color: #edede9;
+}
